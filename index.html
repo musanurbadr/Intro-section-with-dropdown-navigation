@@ -10,43 +10,145 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body class="sans-serif Epilogue h-screen w-ful ">
+<body class="sans-serif Epilogue h-screen w-full">
   <header>
-    <nav class="flex justify-between items-center p-4 ">
-        <div class="flex items-center gap-10 ">
-            <img class="w-auto items-center " src="./images/logo.svg" alt="">
-            <ul class="flex flex-row gap-10">
-                <li class="flex items-center">
-                    <a href="">Features</a>
-                    <img class="ml-2" src="/images/icon-arrow-down.svg" alt="">
-                </li>
-                <li class="flex items-center">
-                    <a href="">Company</a>
-                    <img class="ml-2" src="/images/icon-arrow-down.svg" alt="">
-                </li>
-                <li>
-                    <a href="">Careers</a>
-                </li>
-                <li>
-                    <a href="">About</a>
-                </li>
-            </ul>
+    <nav class="flex h-20 items-center">
+        <div class="flex items-center gap-10">
+          <ul class="flex flex-row gap-10 ">
+            <img class="w-auto " src="./images/logo.svg" alt="">
+            <li class="flex items-center text-gray-500 hover:text-black ">
+              <a href="">Features</a>
+              <img class="ml-2 cursor-pointer hover:bg-[url(/img/icon-arrow-down)] " src="/images/icon-arrow-down.svg" alt="">
+              <img class="translate-x" src="./images/icon-arrow-up.svg" alt="">
+              <div class="flex-col flex absolute">
+                <p class="">
+                  <img src="./images/icon-todo.svg" alt="icon">
+                  Todo List
+                </p>
+                <p class="">
+                  <img src="./images/icon-calendar.svg" alt="icon">
+                  Todo List
+                </p>
+                <p class="">
+                  <img src="./images/icon-reminders.svg" alt="icon">
+                  Todo List
+                </p>
+                <p class="">
+                  <img src="./images/icon-planning.svg" alt="icon">
+                  Todo List
+                </p>
+              </div>
+            </li>
+            <li class="flex items-center text-gray-500 hover:text-black">
+              <a class="" href="">Company</a>
+              <img class="ml-2 cursor-pointer hover:" src="/images/icon-arrow-down.svg" alt="">
+              <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path d="M5 15l7-7 7 7"/>
+                </svg>
+                <div class="absolute ">
+                  <p class="">
+                    History
+                  </p>
+                  <p class="">
+                    Our Team
+                  </p>
+                  <p class="">
+                    Blog
+                  </p>
+                </div>
+            </li>
+            <li class="text-gray-500 cursor-pointer hover:text-black">
+              <a href="">Careers</a>
+            </li>
+              <li class="text-gray-500 cursor-pointer hover:text-black">
+              <a href="">About</a>
+            </li>
+          </ul>
         </div>
-        <div class="flex items-center space-x-4">
-            <button class="px-5 py-2">Login</button>
-            <button class="px-3 py-1 rounded-xl border-2 border-Almost-Black">Register</button>
+        <div class="mbile-menu-btn">
+          <img src="/images/icon-menu.svg" alt="">
+        </div>
+        <div class="">
+          <ul class="mobile-links ">
+            <li class="flex items-center text-gray-500 hover:text-black ">
+              <a href="">Features</a>
+              <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="">
+              <div class="flex-col ">
+                <p class="">
+                  <img src="./images/icon-todo.svg" alt="icon">
+                  Todo List
+                </p>
+                <p class="">
+                  <img src="./images/icon-calendar.svg" alt="icon">
+                  Todo List
+                </p>
+                <p class="">
+                  <img src="./images/icon-reminders.svg" alt="icon">
+                  Todo List
+                </p>
+                <p class="">
+                  <img src="./images/icon-planning.svg" alt="icon">
+                  Todo List
+                </p>
+              </div>
+            </li>
+            <li class="flex items-center text-gray-500 hover:text-black">
+              <a class="" href="">Company</a>
+              <img class="ml-2 cursor-pointer " src="/images/icon-arrow-down.svg" alt="">
+                </svg>
+                <div class="absolute ">
+                  <p class="">
+                    History
+                  </p>
+                  <p class="">
+                    Our Team
+                  </p>
+                  <p class="">
+                    Blog
+                  </p>
+                </div>
+            </li>
+            <li class="text-gray-500 cursor-pointer hover:text-black">
+              <a href="">Careers</a>
+            </li>
+              <li class="text-gray-500 cursor-pointer hover:text-black">
+              <a href="">About</a>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center ">
+            <button id="but-login" class="px-8 py-4 text-gray-500 hover:font-bold">Login</button>
+            <button id="but-Register" class="px-3 py-1 rounded-2xl border-2 border-Almost-Black text-gray-500">Register</button>
         </div>
     </nav>
-</header>
+  </header>
+  <article class="">
+    <div class="">
+      <h1 class="">
+        Make <br> remote work
+      </h1>
+      <p class="">
+        Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.      
+      </p>
+      <button class="bg-black w-fit px-8 py-4 text-white rounded-xl hover:font-bold">
+        Learn more
+      </button>
+    </div>
+    <div class="">
+      <img src="/images/client-databiz.svg" alt="">
+      <img src="/images/client-audiophile.svg" alt="">
+      <img src="/images/client-meet.svg" alt="">
+      <img src="/images/client-maker.svg" alt="">
+    </div>
+    <aside>
+      <img src="images/image-hero-desktop.png" alt="">
+    </aside>
+  </article>
 
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
   <script src="./spricr.js"></script>
 </body>
 </html>
