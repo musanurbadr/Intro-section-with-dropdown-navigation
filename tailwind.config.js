@@ -1,17 +1,21 @@
-/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./*.html'],
   theme: {
-    extend: {
-      container: {
-        center :true
-      },
-      colors: {
-        "Almost-White":"hsl(0, 0%, 98%)",
-        "Medium-Gray":"hsl(0, 0%, 41%)",
-        "Almost-Black":"hsl(0, 0%, 8%)",
-      },
+    maxWidth: {
+      custom: '1100px',
     },
+    container: {
+      center :true
+    },
+    colors: {
+      AlmostWhite:"hsl(0, 0%, 98%)",
+      MediumGray:"hsl(0, 0%, 41%)",
+      AlmostBlack:"hsl(0, 0%, 8%)",
+    },
+    screens: {
+      md: {'max': '800px'},
+    },
+    extend: {},
   },
   plugins: [],
 }

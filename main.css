@@ -1,0 +1,7 @@
+.active .arrow {
+    transform: rotate(180deg);
+    transition: 0.2s;
+}
+.active-menu{
+    display: flex !important;
+}
