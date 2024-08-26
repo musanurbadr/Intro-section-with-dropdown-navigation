@@ -2,28 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link href="./output.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="./tailwind.config.js">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@100;900&family=Inter:wght@100;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/input.css">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="package.json">
+  <link href="./path/to/your/output.css" rel="stylesheet">
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
-<body class="sans-serif Epilogue h-screen w-full">
+
+<body class="font-sans h-screen w-full">
   <header>
-    <nav class="flex h-20 items-center justify-between max-w-[1440px] mx-auto px-12 md:p-4 ">
-      <div class="flex items-center gap-10 md:flex md:cursor-pointer md:z-[999]  ">
+    <nav class="flex h-20 items-center justify-between max-w-[1440px] mx-auto px-12  ">
+      <div class="flex items-center gap-10">
         <img class="w-auto" src="./images/logo.svg" alt="Logo">
-        <ul class="flex flex-row gap-10 list-none">
-          <!-- <Features Dropdown -->
+        <ul class="nav-links flex flex-row gap-10 list-none mdd:hidden">
+          <!-- Features Dropdown -->
           <li class="relative group">
-            <a href="#" class="flex items-center text-gray-500 hover:text-AlmostBlack">
+            <a href="#" class="flex items-center text-gray-500 hover:text-black">
               Features
               <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
             </a>
@@ -62,18 +60,71 @@
           </li>
         </ul>
       </div>
-      <div class="flex items-center gap-4">
-        <button id="but-login" class="px-4 py-2 text-gray-500 hover:font-bold">Login</button>
-        <button id="but-register" class="px-4 py-2 rounded-2xl border-2 border-gray-800 text-gray-500 hover:text-black">Register</button>
+      <div class="mobile-btn">
+        <img src="./images/icon-menu.svg" alt="Menu Icon">
+      </div>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu mdd:hidden md:hidden mdd:flex-col mdd:absolute mdd:right-0 mdd:top-0 mdd:bottom-0 mdd:w-[70%] mdd:bg-white mdd:py-20 mdd:px-8">
+        <ul class="mobile-links mdd:flex mdd:flex-col mdd:gap-4 mdd:list-none">
+          <li class="relative group mdd:flex mdd:flex-col mdd:cursor-pointer">
+            <a href="#" class="flex items-center text-gray-500 hover:text-black mdd:flex mdd:items-center gap-4">
+              Features
+              <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
+            </a>
+            <div class="mobile-sube mdd:flex mdd:flex-col mdd:gap-4 mdd:ml-4">
+              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                <img src="./images/icon-todo.svg" class="mr-3" alt="Todo List Icon">Todo List
+              </a>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                <img src="./images/icon-calendar.svg" class="mr-3" alt="Calendar Icon">Calendar
+              </a>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                <img src="./images/icon-reminders.svg" class="mr-3" alt="Reminders Icon">Reminders
+              </a>
+              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                <img src="./images/icon-planning.svg" class="mr-3" alt="Planning Icon">Planning
+              </a>
+            </div>
+          </li>
+          <!-- Company Dropdown -->
+          <li class="relative group">
+            <a href="#" class="flex items-center text-gray-500 hover:text-black">
+              Company
+              <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
+            </a>
+            <div class="mdd:flex mdd:flex-col mdd:gap-4 mdd:ml-4">
+              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">History</a>
+              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">Our Team</a>
+              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">Blog</a>
+            </div>
+          </li>
+          <li class="text-gray-500 cursor-pointer hover:text-black">
+            <a href="#">Careers</a>
+          </li>
+          <li class="text-gray-500 cursor-pointer hover:text-black">
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center gap-4 nav-right">
+        <button class="px-4 py-2 text-gray-500 hover:font-bold">Login</button>
+        <button class="px-4 py-2 rounded-2xl border-2 border-gray-800 text-gray-500 hover:text-black">Register</button>
       </div>
     </nav>
   </header>
-
+  <!-- Main Content -->
   <main class="flex items-center justify-center min-h-[calc(100vh-80px)]">
-    <article class="grid max-w-[90%] gap-20 grid-cols-1 md:grid-cols-2 px-8">
+    <article class="grid max-w-[90%] gap-20 custom-grid px-8">
+      <!-- Image Section -->
+      <aside class="image-section flex justify-center items-center order-1">
+        <picture>
+          <source media="(max-width: 800px)" srcset="./images/image-hero-mobile.png">
+          <img class="w-full h-auto " src="images/image-hero-desktop.png" alt="Hero Image">
+        </picture>
+      </aside>
       <!-- Text Section -->
-      <div class="flex flex-col justify-evenly space-y-6 md:space-y-8">
-        <h1 class="text-4xl md:text-6xl font-bold leading-tight md:leading-none">
+      <div class="text-section main-left flex flex-col justify-evenly space-y-6 order-2">
+        <h1 class="font-heading main-hader text-5xl font-bold leading-tight mdd:leading-none">
           Make <br> remote work
         </h1>
         <p class="text-lg text-gray-500 leading-relaxed">
@@ -83,38 +134,17 @@
         <button class="bg-black text-white py-3 px-6 rounded-xl hover:font-bold transition-all duration-300 w-max">
           Learn more
         </button>
-        <div class="flex gap-4 mt-6 items-center justify-between ">
-          <img src="/images/client-databiz.svg" alt="Databiz Logo" class="h-8">
-          <img src="/images/client-audiophile.svg" alt="Audiophile Logo" class="h-8">
-          <img src="/images/client-meet.svg" alt="Meet Logo" class="h-8">
-          <img src="/images/client-maker.svg" alt="Maker Logo" class="h-8">
+        <div class="logos flex items-center gap-3 justify-center ">
+          <img src="/images/client-databiz.svg" alt="Databiz Logo" class="h-5">
+          <img src="/images/client-audiophile.svg" alt="Audiophile Logo" class="h-5">
+          <img src="/images/client-meet.svg" alt="Meet Logo" class="h-5">
+          <img src="/images/client-maker.svg" alt="Maker Logo" class="h-5">
         </div>
       </div>
-      <!-- Image Section -->
-      <aside class="flex justify-center items-center">
-        <picture>
-          <source media="(max-width:800px)" srcset="./images/image-hero-mobile.png">
-          <img class="w-full h-auto md:max-w-none" src="images/image-hero-desktop.png" alt="Hero Image">
-        </picture>
-      </aside>
-    </article>
+    </article>    
   </main>
-  
-  <div class="overflow-hidden"></div>  
-  <script src="./spricr.js">
-    module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{html,js}'],
-  darkMode: false, // or 'media' or 'class'
-  theme: {
-    extend: {},
-  },
-  variants: {
-    extend: {},
-  },
-  plugins: [],
-}
-
-  </script>
+  <!-- Overlay (for mobile menu) -->
+  <div class="overflow"></div>  
+  <script src="./script.js"></script>
 </body>
 </html>
