@@ -1,119 +1,140 @@
 :root{
---Almost-White: hsl(0, 0%, 98%);
---Medium-Gray: hsl(0, 0%, 41%);
---Almost-Black: hsl(0, 0%, 8%);
-}
-
-.active .arrow {
-    transform: rotate(180deg);
-    transition: 0.2s;
-}
-.active-menu{
-    display: flex !important;
-}
-.custom-grid {
-    grid-template-columns: 1fr 1fr; /* veya istediğiniz değerler */
-}
-.order-2{
-    order: 0;
-}
-
-@media screen and (max-width:800px){
-    nav{
-        padding-inline: 16px;
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);
     }
-    .mobile-btn {
-        display: flex;
-        cursor: pointer;
-        z-index: 99;
+    
+    .active .arrow {
+        transform: rotate(180deg);
+        transition: 0.2s;
     }
-    .mobile-menu{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        width: 70%;
-        background-color: var(--Almost-Black);
-        padding: 5rem 2rem ;
+    .active-menu{
+        display: block !important;
     }
-    .mobile-links{
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        list-style: none;
-    }
-    .mobile-links li{
-        display: flex;
-        color: var(--Medium-Gray);
-        flex-direction: column;
-        cursor: pointer;
-    }
-    .mobile-links li a{
-        display: flex;
-        align-items: center;
-        gap: 1rem;       
-    }
-    .mobile-sube{
-        display: none;
-        flex-direction: column;
-        gap: 1rem;
-        margin: 1rem;
-
-    }
-    .overflow{
-        background-color: black;
-        display: none;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 30%;
-        opacity: .7;
-    }
-    .nav-links {
-        display: none;
-    }
-    .nav-right{
-        display: none;
-    }
-    main{
-        align-items: flex-start;
-        padding: 0;
-    }
-    main .custom-grid{
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-    }
-    .main-left{
-        align-items: center;
-        text-align: center;
-        gap: 2rem;
-    }
-    .font-heading{
-        font-size: 2.2rem;
-    }
-    .logos{
-        display: flex;
-        width: 100%;
-        padding-inline:1rem;
-        margin: auto;
-        gap: 10px;
-        flex-wrap: wrap;
-        height: 10px;
-        
+    .custom-grid {
+        grid-template-columns: 1fr 1fr; /* veya istediğiniz değerler */
     }
     .order-2{
-        order: 1;
+        order: 0;
     }
-    picture img{
-        width: 100%;
+    .mobile-menu-btn img{
+        display: none;   
+    }
+    @media screen and (max-width:800px){
 
+        nav{
+            padding-inline: 16px;
+        }
+        .mobile-btn {
+            display: flex;
+            cursor: pointer;
+            z-index: 99;
+        }
+        .mobile-menu{
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 70%;
+            background-color: white;
+            padding: 5rem 2rem ;
+        }
+        .mobile-links{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            list-style: none;
+        }
+        .mobile-links li{
+            display: flex;
+            color: var(--Medium-Gray);
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .mobile-links li a{
+            display: flex;
+            align-items: center;
+            gap: 1rem;       
+        }
+        .mobile-sube{
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+            margin: 1rem;
+    
+        }
+        .overflow{
+            background-color: black;
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 30%;
+            opacity: .7;
+        }
+        .nav-links {
+            display: none;
+        }
+        .nav-right{
+            display: none;
+        }
+        main{
+            align-items: flex-start;
+            padding: 0;
+        }
+        main .custom-grid{
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+        }
+        .main-left{
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+        }
+        .font-heading{
+            font-size: 2.2rem;
+        }
+        .logos{
+            display: flex;
+            width: 100%;
+            padding-inline:1rem;
+            margin: auto;
+            gap: 10px;
+            flex-wrap: wrap;
+            height: 10px;
+            
+        }
+        .order-2{
+            order: 1;
+        }
+        picture img{
+            width: 100%;
+    
+        }
+        main{
+            width: 100%;
+        }
+        .mobile-menu-btn img{
+            display: block;
+            cursor: pointer;
+            z-index: 999;
+        }
+        .overflow {
+            background-color: black;
+            display: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 30%;
+            opacity: 0.7;
+        }
+        .active-btn{
+            display: flex;
+        }
     }
-    main{
-        width: 100%;
-    }
-
-}
+    

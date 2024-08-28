@@ -18,24 +18,24 @@
     <nav class="flex h-20 items-center justify-between max-w-[1440px] mx-auto px-12  ">
       <div class="flex items-center gap-10">
         <img class="w-auto" src="./images/logo.svg" alt="Logo">
-        <ul class="nav-links flex flex-row gap-10 list-none mdd:hidden">
+        <ul class="nav-links flex flex-row gap-10 list-none ">
           <!-- Features Dropdown -->
-          <li class="relative group">
-            <a href="#" class="flex items-center text-gray-500 hover:text-black">
+          <li class="relative group  ">
+            <a href="#" class=" flex items-center text-gray-500 hover:text-black">
               Features
-              <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
+              <img class="arrow ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
             </a>
-            <div class="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg rounded-lg py-2 group-hover:block">
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+            <div class="sub-menu  absolute left-0 mt-2 hidden w-48 bg-white shadow-lg rounded-lg py-2 group-hover:block">
+              <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
                 <img src="./images/icon-todo.svg" class="mr-3" alt="Todo List Icon">Todo List
               </a>
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+              <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
                 <img src="./images/icon-calendar.svg" class="mr-3" alt="Calendar Icon">Calendar
               </a>
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+              <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
                 <img src="./images/icon-reminders.svg" class="mr-3" alt="Reminders Icon">Reminders
               </a>
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
+              <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
                 <img src="./images/icon-planning.svg" class="mr-3" alt="Planning Icon">Planning
               </a>
             </div>
@@ -44,12 +44,12 @@
           <li class="relative group">
             <a href="#" class="flex items-center text-gray-500 hover:text-black">
               Company
-              <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
+              <img class="arrow ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
             </a>
-            <div class="absolute left-0 mt-2 hidden w-48 bg-white shadow-lg rounded-lg py-2 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">History</a>
-              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">Our Team</a>
-              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">Blog</a>
+            <div class="sub-menu  absolute left-0 mt-2 hidden w-48 bg-white shadow-lg rounded-lg py-2 group-hover:block">
+              <a href="#" class="sub-link block px-4 py-2 text-gray-500 hover:text-black">History</a>
+              <a href="#" class="sub-link block px-4 py-2 text-gray-500 hover:text-black">Our Team</a>
+              <a href="#" class="sub-link block px-4 py-2 text-gray-500 hover:text-black">Blog</a>
             </div>
           </li>
           <li class="text-gray-500 cursor-pointer hover:text-black">
@@ -60,42 +60,42 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-btn">
+      <div class="mobile-menu-btn">
         <img src="./images/icon-menu.svg" alt="Menu Icon">
       </div>
       <!-- Mobile Menu -->
-      <div class="mobile-menu mdd:hidden md:hidden mdd:flex-col mdd:absolute mdd:right-0 mdd:top-0 mdd:bottom-0 mdd:w-[70%] mdd:bg-white mdd:py-20 mdd:px-8">
-        <ul class="mobile-links mdd:flex mdd:flex-col mdd:gap-4 mdd:list-none">
+      <div class="mobile-menu hidden ">
+        <ul class="mobile-links hidden">
           <li class="relative group mdd:flex mdd:flex-col mdd:cursor-pointer">
-            <a href="#" class="flex items-center text-gray-500 hover:text-black mdd:flex mdd:items-center gap-4">
-              Features
-              <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
+            <a href="#" class="sub-link flex items-center text-gray-500 hover:text-black mdd:flex mdd:items-center gap-4">
+                Features
+                <img class="arrow ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
             </a>
-            <div class="mobile-sube mdd:flex mdd:flex-col mdd:gap-4 mdd:ml-4">
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
-                <img src="./images/icon-todo.svg" class="mr-3" alt="Todo List Icon">Todo List
-              </a>
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
-                <img src="./images/icon-calendar.svg" class="mr-3" alt="Calendar Icon">Calendar
-              </a>
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
-                <img src="./images/icon-reminders.svg" class="mr-3" alt="Reminders Icon">Reminders
-              </a>
-              <a href="#" class="flex items-center px-4 py-2 text-gray-500 hover:text-black">
-                <img src="./images/icon-planning.svg" class="mr-3" alt="Planning Icon">Planning
-              </a>
+            <div class="mobile-sub hidden group-hover:block flex-col gap-0.5 ml-4">
+                <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                    <img src="./images/icon-todo.svg" class="mr-3" alt="Todo List Icon">Todo List
+                </a>
+                <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                    <img src="./images/icon-calendar.svg" class="mr-3" alt="Calendar Icon">Calendar
+                </a>
+                <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                    <img src="./images/icon-reminders.svg" class="mr-3" alt="Reminders Icon">Reminders
+                </a>
+                <a href="#" class="sub-link flex items-center px-4 py-2 text-gray-500 hover:text-black">
+                    <img src="./images/icon-planning.svg" class="mr-3" alt="Planning Icon">Planning
+                </a>
             </div>
-          </li>
+          </li>        
           <!-- Company Dropdown -->
-          <li class="relative group">
-            <a href="#" class="flex items-center text-gray-500 hover:text-black">
+          <li class="relative group mobile-link">
+            <a href="#" class=" flex items-center text-gray-500 hover:text-black">
               Company
               <img class="ml-2 cursor-pointer" src="/images/icon-arrow-down.svg" alt="Arrow Down">
             </a>
-            <div class="mdd:flex mdd:flex-col mdd:gap-4 mdd:ml-4">
-              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">History</a>
-              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">Our Team</a>
-              <a href="#" class="block px-4 py-2 text-gray-500 hover:text-black">Blog</a>
+            <div class="mobile-sub hidden flex-col">
+              <a href="#" class="sub-link block px-4 py-2 text-gray-500 hover:text-black">History</a>
+              <a href="#" class="sub-link block px-4 py-2 text-gray-500 hover:text-black">Our Team</a>
+              <a href="#" class="sub-link block px-4 py-2 text-gray-500 hover:text-black">Blog</a>
             </div>
           </li>
           <li class="text-gray-500 cursor-pointer hover:text-black">
@@ -104,6 +104,10 @@
           <li class="text-gray-500 cursor-pointer hover:text-black">
             <a href="#">About</a>
           </li>
+          <div class="flex items-center gap-4 flex-col ">
+            <button class="px-16 py-1 text-gray-500 hover:font-bold">Login</button>
+            <button class="px-16 py-1 rounded-xl border-2 border-gray-500 text-gray-500 hover:text-black">Register</button>
+          </div>
         </ul>
       </div>
       <div class="flex items-center gap-4 nav-right">
@@ -145,6 +149,6 @@
   </main>
   <!-- Overlay (for mobile menu) -->
   <div class="overflow"></div>  
-  <script src="./script.js"></script>
+  <script src="./spricr.js"></script>
 </body>
 </html>
