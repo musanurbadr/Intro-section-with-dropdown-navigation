@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "fsevents": "^2.3.3",
     "tailwindcss": "^3.4.10"
   },
   "name": "intro-section-with-dropdown-navigation-main",
@@ -31,7 +32,6 @@
     "fastq": "^1.17.1",
     "fill-range": "^7.1.1",
     "foreground-child": "^3.2.1",
-    "fsevents": "linux",
     "function-bind": "^1.1.2",
     "glob": "^10.4.5",
     "glob-parent": "^6.0.2",
@@ -98,10 +98,10 @@
     "wrap-ansi-cjs": "^7.0.0",
     "yaml": "^2.5.0"
   },
-    "scripts": {
-      "build": "npx tailwindcss -i ./input.css -o ./output.css",
-      "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
-    },
+  "scripts": {
+    "build": "npx tailwindcss -i ./input.css -o ./output.css",
+    "watch": "npx tailwindcss -i ./input.css -o ./output.css --watch"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC"
